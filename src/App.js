@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import UserProfile from './components/user-profile/UserProfile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      {/* <nav className="shadow">
+        <h2 className="nav-title">Arunkumar N</h2>
+      </nav> */}
+      <div className="App flex-display">
+        <div className="flex-left-item">
+          <UserProfile />
+        </div>
+        <div className="flex-right-item">
+          <div className="app-card" style={{height: '500px'}}>
+            <h5>Profile loading......</h5>
+          </div>
+        </div>
+      </div>
+      
+       
     </div>
   );
 }

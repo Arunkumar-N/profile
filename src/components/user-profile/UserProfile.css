@@ -1,6 +1,11 @@
 .App-logo {
-    height: 25vmin;
-    width: 25vmin;
+    height: 150px;
+    width: 150px;
     pointer-events: none;
     border-radius:  50%;
+}
+.description {
+    margin-top: 6px;
+    font-size: 16px;
+    text-align: justify;
 }

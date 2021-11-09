@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   margin: auto 10px;
 }
 nav {
@@ -18,7 +18,9 @@ body {
   background-color: #e9f5f1;
 }
 .flex-display {
-  display: block;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
 }
 .flex-left-item {
   width: 100%;
@@ -27,10 +29,13 @@ body {
 .flex-right-item {
   width: 100%;
   margin-top: 2%;
+  float:left;
 }
 @media screen and (min-width: 1023px) {
   .flex-display {
     display: flex;
+    flex-flow: row;
+    text-align: unset;
   }
   .flex-left-item {
     width: 20%;
@@ -42,16 +47,40 @@ body {
     margin-top: 2%;
   }
   .App {
-    text-align: center;
+    /* text-align: center; */
     margin: auto 60px;
   }
 }
 .app-card {
-  background: linear-gradient(to top, #e9f5f1, white);
+  background: linear-gradient(to top, white, #e9f5f1);
   padding: 18px;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
   border-radius:  5px;
 }
 .shadow {
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.highlight {
+  color: #FF5349;
+}
+.highlight-grey {
+  color: #808080;
+}
+.mt-8 {
+  margin-top:4px;
+}
+.mb-0 {
+  margin-bottom:0;
+}
+.center {
+  text-align: center;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fa {
+  font-size: 18px;
 }

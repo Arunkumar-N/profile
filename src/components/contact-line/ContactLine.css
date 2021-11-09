@@ -1,0 +1,25 @@
+.contact-item {
+    width: fit-content;
+    margin:  20px auto;
+}
+.contact-item a {
+    text-decoration: none;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+.contact-item a span {
+    display: none;
+}
+.flex-display-contact {
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+}
+@media screen and (min-width: 1023px) { 
+    .contact-item a span {
+        color: black;
+        margin-left: 10px;
+        display: inline-block;
+    }
+}

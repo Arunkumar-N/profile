@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 import UserProfile from './components/user-profile/UserProfile';
+import ContactLine from './components/contact-line/ContactLine';
 
 function App() {
   return (
-    <div >
+    <div className="App">
       {/* <nav className="shadow">
         <h2 className="nav-title">Arunkumar N</h2>
       </nav> */}
-      <div className="App flex-display">
-        <div className="flex-left-item">
-          <UserProfile />
-        </div>
-        <div className="flex-right-item">
-          <div className="app-card" style={{height: '500px'}}>
+      <br/>
+      <UserProfile />
+      <ContactLine />
+      <div className="app-card" style={{height: '500px'}}>
             <h5>Profile loading......</h5>
-          </div>
-        </div>
       </div>
-      
+      <br/>
        
     </div>
   );
